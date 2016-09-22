@@ -3,7 +3,9 @@
 %{
 #include "linalg/sparsemat.hpp"
 #include "numpy/arrayobject.h"
-#include "pyoperator.hpp"     
+#include "pyoperator.hpp"
+#include <fstream>  
+#include <iostream>  
   %}
 // initialization required to return numpy array from SWIG
 %init %{
@@ -64,4 +66,12 @@ PyObject* GetDataArray(void) const{
   npy_intp dims[] = {I[L]};
   return  PyArray_SimpleNewFromData(1, dims, NPY_DOUBLE, A);
   }
+void Print(const char *file){
+  std::ofstream mat_stream(file);
+  if (!mat_stream) {
+     std::cerr << "\nCan not open output file: " << file << '\n' << std::endl;
+     return;
+     }
+  self->Print(mat_stream);
+  } 
 };
