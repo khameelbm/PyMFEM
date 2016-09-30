@@ -627,6 +627,31 @@ class VectorFEMassIntegrator(BilinearFormIntegrator):
 VectorFEMassIntegrator_swigregister = _bilininteg.VectorFEMassIntegrator_swigregister
 VectorFEMassIntegrator_swigregister(VectorFEMassIntegrator)
 
+class GradientVectorFEIntegrator(BilinearFormIntegrator):
+    __swig_setmethods__ = {}
+    for _s in [BilinearFormIntegrator]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, GradientVectorFEIntegrator, name, value)
+    __swig_getmethods__ = {}
+    for _s in [BilinearFormIntegrator]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, GradientVectorFEIntegrator, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _bilininteg.new_GradientVectorFEIntegrator(*args)
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+
+    def AssembleElementMatrix2(self, trial_el, test_el, Trans, elmat):
+        return _bilininteg.GradientVectorFEIntegrator_AssembleElementMatrix2(self, trial_el, test_el, Trans, elmat)
+    __swig_destroy__ = _bilininteg.delete_GradientVectorFEIntegrator
+    __del__ = lambda self: None
+GradientVectorFEIntegrator_swigregister = _bilininteg.GradientVectorFEIntegrator_swigregister
+GradientVectorFEIntegrator_swigregister(GradientVectorFEIntegrator)
+
 class VectorDivergenceIntegrator(BilinearFormIntegrator):
     __swig_setmethods__ = {}
     for _s in [BilinearFormIntegrator]:
@@ -973,31 +998,6 @@ class NormalInterpolator(DiscreteInterpolator):
     __del__ = lambda self: None
 NormalInterpolator_swigregister = _bilininteg.NormalInterpolator_swigregister
 NormalInterpolator_swigregister(NormalInterpolator)
-
-class GradientVectorFEIntegrator(BilinearFormIntegrator):
-    __swig_setmethods__ = {}
-    for _s in [BilinearFormIntegrator]:
-        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
-    __setattr__ = lambda self, name, value: _swig_setattr(self, GradientVectorFEIntegrator, name, value)
-    __swig_getmethods__ = {}
-    for _s in [BilinearFormIntegrator]:
-        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
-    __getattr__ = lambda self, name: _swig_getattr(self, GradientVectorFEIntegrator, name)
-    __repr__ = _swig_repr
-
-    def __init__(self, *args):
-        this = _bilininteg.new_GradientVectorFEIntegrator(*args)
-        try:
-            self.this.append(this)
-        except Exception:
-            self.this = this
-    __swig_destroy__ = _bilininteg.delete_GradientVectorFEIntegrator
-    __del__ = lambda self: None
-
-    def AssembleElementMatrix2(self, trial_el, test_el, Trans, elmat):
-        return _bilininteg.GradientVectorFEIntegrator_AssembleElementMatrix2(self, trial_el, test_el, Trans, elmat)
-GradientVectorFEIntegrator_swigregister = _bilininteg.GradientVectorFEIntegrator_swigregister
-GradientVectorFEIntegrator_swigregister(GradientVectorFEIntegrator)
 
 # This file is compatible with both classic and new-style classes.
 

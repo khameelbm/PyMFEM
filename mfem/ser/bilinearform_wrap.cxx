@@ -3454,70 +3454,72 @@ namespace Swig {
 #define SWIGTYPE_p_char swig_types[0]
 #define SWIGTYPE_p_double swig_types[1]
 #define SWIGTYPE_p_hex_t swig_types[2]
-#define SWIGTYPE_p_mfem__AbstractSparseMatrix swig_types[3]
-#define SWIGTYPE_p_mfem__Array2DT_mfem__SparseMatrix_p_t swig_types[4]
-#define SWIGTYPE_p_mfem__ArrayT_int_t swig_types[5]
-#define SWIGTYPE_p_mfem__ArrayT_mfem__BilinearFormIntegrator_p_t swig_types[6]
-#define SWIGTYPE_p_mfem__BilinearForm swig_types[7]
-#define SWIGTYPE_p_mfem__BilinearFormIntegrator swig_types[8]
-#define SWIGTYPE_p_mfem__BoundaryMassIntegrator swig_types[9]
-#define SWIGTYPE_p_mfem__ConvectionIntegrator swig_types[10]
-#define SWIGTYPE_p_mfem__CurlCurlIntegrator swig_types[11]
-#define SWIGTYPE_p_mfem__CurlInterpolator swig_types[12]
-#define SWIGTYPE_p_mfem__DGDiffusionIntegrator swig_types[13]
-#define SWIGTYPE_p_mfem__DGTraceIntegrator swig_types[14]
-#define SWIGTYPE_p_mfem__DenseMatrix swig_types[15]
-#define SWIGTYPE_p_mfem__DenseMatrixInverse swig_types[16]
-#define SWIGTYPE_p_mfem__DerivativeIntegrator swig_types[17]
-#define SWIGTYPE_p_mfem__DiffusionIntegrator swig_types[18]
-#define SWIGTYPE_p_mfem__DiscreteInterpolator swig_types[19]
-#define SWIGTYPE_p_mfem__DiscreteLinearOperator swig_types[20]
-#define SWIGTYPE_p_mfem__DivDivIntegrator swig_types[21]
-#define SWIGTYPE_p_mfem__DivergenceInterpolator swig_types[22]
-#define SWIGTYPE_p_mfem__ElasticityIntegrator swig_types[23]
-#define SWIGTYPE_p_mfem__FiniteElementSpace swig_types[24]
-#define SWIGTYPE_p_mfem__GradientInterpolator swig_types[25]
-#define SWIGTYPE_p_mfem__GridFunction swig_types[26]
-#define SWIGTYPE_p_mfem__GroupConvectionIntegrator swig_types[27]
-#define SWIGTYPE_p_mfem__IdentityInterpolator swig_types[28]
-#define SWIGTYPE_p_mfem__IdentityOperator swig_types[29]
-#define SWIGTYPE_p_mfem__IntegrationRule swig_types[30]
-#define SWIGTYPE_p_mfem__InverseIntegrator swig_types[31]
-#define SWIGTYPE_p_mfem__L2_FECollection swig_types[32]
-#define SWIGTYPE_p_mfem__LinearForm swig_types[33]
-#define SWIGTYPE_p_mfem__LumpedIntegrator swig_types[34]
-#define SWIGTYPE_p_mfem__MassIntegrator swig_types[35]
-#define SWIGTYPE_p_mfem__Matrix swig_types[36]
-#define SWIGTYPE_p_mfem__MatrixInverse swig_types[37]
-#define SWIGTYPE_p_mfem__MixedBilinearForm swig_types[38]
-#define SWIGTYPE_p_mfem__NormalInterpolator swig_types[39]
-#define SWIGTYPE_p_mfem__NormalTraceJumpIntegrator swig_types[40]
-#define SWIGTYPE_p_mfem__Operator swig_types[41]
-#define SWIGTYPE_p_mfem__PyOperatorBase swig_types[42]
-#define SWIGTYPE_p_mfem__PyTimeDependentOperatorBase swig_types[43]
-#define SWIGTYPE_p_mfem__RAPOperator swig_types[44]
-#define SWIGTYPE_p_mfem__Solver swig_types[45]
-#define SWIGTYPE_p_mfem__SparseMatrix swig_types[46]
-#define SWIGTYPE_p_mfem__SumIntegrator swig_types[47]
-#define SWIGTYPE_p_mfem__TimeDependentOperator swig_types[48]
-#define SWIGTYPE_p_mfem__TraceJumpIntegrator swig_types[49]
-#define SWIGTYPE_p_mfem__TransposeIntegrator swig_types[50]
-#define SWIGTYPE_p_mfem__TransposeOperator swig_types[51]
-#define SWIGTYPE_p_mfem__TripleProductOperator swig_types[52]
-#define SWIGTYPE_p_mfem__Vector swig_types[53]
-#define SWIGTYPE_p_mfem__VectorCurlCurlIntegrator swig_types[54]
-#define SWIGTYPE_p_mfem__VectorDiffusionIntegrator swig_types[55]
-#define SWIGTYPE_p_mfem__VectorDivergenceIntegrator swig_types[56]
-#define SWIGTYPE_p_mfem__VectorFECurlIntegrator swig_types[57]
-#define SWIGTYPE_p_mfem__VectorFEDivergenceIntegrator swig_types[58]
-#define SWIGTYPE_p_mfem__VectorFEMassIntegrator swig_types[59]
-#define SWIGTYPE_p_mfem__VectorMassIntegrator swig_types[60]
-#define SWIGTYPE_p_quad_t swig_types[61]
-#define SWIGTYPE_p_seg_t swig_types[62]
-#define SWIGTYPE_p_tet_t swig_types[63]
-#define SWIGTYPE_p_tri_t swig_types[64]
-static swig_type_info *swig_types[66];
-static swig_module_info swig_module = {swig_types, 65, 0, 0, 0, 0};
+#define SWIGTYPE_p_intp swig_types[3]
+#define SWIGTYPE_p_mfem__AbstractSparseMatrix swig_types[4]
+#define SWIGTYPE_p_mfem__Array2DT_mfem__SparseMatrix_p_t swig_types[5]
+#define SWIGTYPE_p_mfem__ArrayT_int_t swig_types[6]
+#define SWIGTYPE_p_mfem__ArrayT_mfem__BilinearFormIntegrator_p_t swig_types[7]
+#define SWIGTYPE_p_mfem__BilinearForm swig_types[8]
+#define SWIGTYPE_p_mfem__BilinearFormIntegrator swig_types[9]
+#define SWIGTYPE_p_mfem__BoundaryMassIntegrator swig_types[10]
+#define SWIGTYPE_p_mfem__ConvectionIntegrator swig_types[11]
+#define SWIGTYPE_p_mfem__CurlCurlIntegrator swig_types[12]
+#define SWIGTYPE_p_mfem__CurlInterpolator swig_types[13]
+#define SWIGTYPE_p_mfem__DGDiffusionIntegrator swig_types[14]
+#define SWIGTYPE_p_mfem__DGTraceIntegrator swig_types[15]
+#define SWIGTYPE_p_mfem__DenseMatrix swig_types[16]
+#define SWIGTYPE_p_mfem__DenseMatrixInverse swig_types[17]
+#define SWIGTYPE_p_mfem__DerivativeIntegrator swig_types[18]
+#define SWIGTYPE_p_mfem__DiffusionIntegrator swig_types[19]
+#define SWIGTYPE_p_mfem__DiscreteInterpolator swig_types[20]
+#define SWIGTYPE_p_mfem__DiscreteLinearOperator swig_types[21]
+#define SWIGTYPE_p_mfem__DivDivIntegrator swig_types[22]
+#define SWIGTYPE_p_mfem__DivergenceInterpolator swig_types[23]
+#define SWIGTYPE_p_mfem__ElasticityIntegrator swig_types[24]
+#define SWIGTYPE_p_mfem__FiniteElementSpace swig_types[25]
+#define SWIGTYPE_p_mfem__GradientInterpolator swig_types[26]
+#define SWIGTYPE_p_mfem__GradientVectorFEIntegrator swig_types[27]
+#define SWIGTYPE_p_mfem__GridFunction swig_types[28]
+#define SWIGTYPE_p_mfem__GroupConvectionIntegrator swig_types[29]
+#define SWIGTYPE_p_mfem__IdentityInterpolator swig_types[30]
+#define SWIGTYPE_p_mfem__IdentityOperator swig_types[31]
+#define SWIGTYPE_p_mfem__IntegrationRule swig_types[32]
+#define SWIGTYPE_p_mfem__InverseIntegrator swig_types[33]
+#define SWIGTYPE_p_mfem__L2_FECollection swig_types[34]
+#define SWIGTYPE_p_mfem__LinearForm swig_types[35]
+#define SWIGTYPE_p_mfem__LumpedIntegrator swig_types[36]
+#define SWIGTYPE_p_mfem__MassIntegrator swig_types[37]
+#define SWIGTYPE_p_mfem__Matrix swig_types[38]
+#define SWIGTYPE_p_mfem__MatrixInverse swig_types[39]
+#define SWIGTYPE_p_mfem__MixedBilinearForm swig_types[40]
+#define SWIGTYPE_p_mfem__NormalInterpolator swig_types[41]
+#define SWIGTYPE_p_mfem__NormalTraceJumpIntegrator swig_types[42]
+#define SWIGTYPE_p_mfem__Operator swig_types[43]
+#define SWIGTYPE_p_mfem__PyOperatorBase swig_types[44]
+#define SWIGTYPE_p_mfem__PyTimeDependentOperatorBase swig_types[45]
+#define SWIGTYPE_p_mfem__RAPOperator swig_types[46]
+#define SWIGTYPE_p_mfem__Solver swig_types[47]
+#define SWIGTYPE_p_mfem__SparseMatrix swig_types[48]
+#define SWIGTYPE_p_mfem__SumIntegrator swig_types[49]
+#define SWIGTYPE_p_mfem__TimeDependentOperator swig_types[50]
+#define SWIGTYPE_p_mfem__TraceJumpIntegrator swig_types[51]
+#define SWIGTYPE_p_mfem__TransposeIntegrator swig_types[52]
+#define SWIGTYPE_p_mfem__TransposeOperator swig_types[53]
+#define SWIGTYPE_p_mfem__TripleProductOperator swig_types[54]
+#define SWIGTYPE_p_mfem__Vector swig_types[55]
+#define SWIGTYPE_p_mfem__VectorCurlCurlIntegrator swig_types[56]
+#define SWIGTYPE_p_mfem__VectorDiffusionIntegrator swig_types[57]
+#define SWIGTYPE_p_mfem__VectorDivergenceIntegrator swig_types[58]
+#define SWIGTYPE_p_mfem__VectorFECurlIntegrator swig_types[59]
+#define SWIGTYPE_p_mfem__VectorFEDivergenceIntegrator swig_types[60]
+#define SWIGTYPE_p_mfem__VectorFEMassIntegrator swig_types[61]
+#define SWIGTYPE_p_mfem__VectorMassIntegrator swig_types[62]
+#define SWIGTYPE_p_quad_t swig_types[63]
+#define SWIGTYPE_p_seg_t swig_types[64]
+#define SWIGTYPE_p_tet_t swig_types[65]
+#define SWIGTYPE_p_tri_t swig_types[66]
+static swig_type_info *swig_types[68];
+static swig_module_info swig_module = {swig_types, 67, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -9781,6 +9783,9 @@ static void *_p_mfem__VectorCurlCurlIntegratorTo_p_mfem__BilinearFormIntegrator(
 static void *_p_mfem__VectorFEMassIntegratorTo_p_mfem__BilinearFormIntegrator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((mfem::BilinearFormIntegrator *)  ((mfem::VectorFEMassIntegrator *) x));
 }
+static void *_p_mfem__GradientVectorFEIntegratorTo_p_mfem__BilinearFormIntegrator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((mfem::BilinearFormIntegrator *)  ((mfem::GradientVectorFEIntegrator *) x));
+}
 static void *_p_mfem__VectorDivergenceIntegratorTo_p_mfem__BilinearFormIntegrator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((mfem::BilinearFormIntegrator *)  ((mfem::VectorDivergenceIntegrator *) x));
 }
@@ -9916,6 +9921,7 @@ static void *_p_mfem__DiscreteLinearOperatorTo_p_mfem__Operator(void *x, int *SW
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_double = {"_p_double", "double *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_hex_t = {"_p_hex_t", "hex_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_intp = {"_p_intp", "intp *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__Array2DT_mfem__SparseMatrix_p_t = {"_p_mfem__Array2DT_mfem__SparseMatrix_p_t", "mfem::Array2D< mfem::SparseMatrix * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__ArrayT_int_t = {"_p_mfem__ArrayT_int_t", "mfem::Array< int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__ArrayT_mfem__BilinearFormIntegrator_p_t = {"_p_mfem__ArrayT_mfem__BilinearFormIntegrator_p_t", "mfem::Array< mfem::BilinearFormIntegrator * > *", 0, 0, (void*)0, 0};
@@ -9937,6 +9943,7 @@ static swig_type_info _swigt__p_mfem__LumpedIntegrator = {"_p_mfem__LumpedIntegr
 static swig_type_info _swigt__p_mfem__TransposeIntegrator = {"_p_mfem__TransposeIntegrator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_mfem__VectorCurlCurlIntegrator = {"_p_mfem__VectorCurlCurlIntegrator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_mfem__VectorFEMassIntegrator = {"_p_mfem__VectorFEMassIntegrator", 0, 0, 0, 0, 0};
+static swig_type_info _swigt__p_mfem__GradientVectorFEIntegrator = {"_p_mfem__GradientVectorFEIntegrator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_mfem__VectorDivergenceIntegrator = {"_p_mfem__VectorDivergenceIntegrator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_mfem__DivDivIntegrator = {"_p_mfem__DivDivIntegrator", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_mfem__VectorDiffusionIntegrator = {"_p_mfem__VectorDiffusionIntegrator", 0, 0, 0, 0, 0};
@@ -9983,6 +9990,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_char,
   &_swigt__p_double,
   &_swigt__p_hex_t,
+  &_swigt__p_intp,
   &_swigt__p_mfem__AbstractSparseMatrix,
   &_swigt__p_mfem__Array2DT_mfem__SparseMatrix_p_t,
   &_swigt__p_mfem__ArrayT_int_t,
@@ -10006,6 +10014,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_mfem__ElasticityIntegrator,
   &_swigt__p_mfem__FiniteElementSpace,
   &_swigt__p_mfem__GradientInterpolator,
+  &_swigt__p_mfem__GradientVectorFEIntegrator,
   &_swigt__p_mfem__GridFunction,
   &_swigt__p_mfem__GroupConvectionIntegrator,
   &_swigt__p_mfem__IdentityInterpolator,
@@ -10050,6 +10059,7 @@ static swig_type_info *swig_type_initial[] = {
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_double[] = {  {&_swigt__p_double, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_hex_t[] = {  {&_swigt__p_hex_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_intp[] = {  {&_swigt__p_intp, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__Array2DT_mfem__SparseMatrix_p_t[] = {  {&_swigt__p_mfem__Array2DT_mfem__SparseMatrix_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__ArrayT_int_t[] = {  {&_swigt__p_mfem__ArrayT_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__ArrayT_mfem__BilinearFormIntegrator_p_t[] = {  {&_swigt__p_mfem__ArrayT_mfem__BilinearFormIntegrator_p_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -10070,6 +10080,7 @@ static swig_cast_info _swigc__p_mfem__LumpedIntegrator[] = {{&_swigt__p_mfem__Lu
 static swig_cast_info _swigc__p_mfem__TransposeIntegrator[] = {{&_swigt__p_mfem__TransposeIntegrator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__VectorCurlCurlIntegrator[] = {{&_swigt__p_mfem__VectorCurlCurlIntegrator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__VectorFEMassIntegrator[] = {{&_swigt__p_mfem__VectorFEMassIntegrator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_mfem__GradientVectorFEIntegrator[] = {{&_swigt__p_mfem__GradientVectorFEIntegrator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__VectorDivergenceIntegrator[] = {{&_swigt__p_mfem__VectorDivergenceIntegrator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__DivDivIntegrator[] = {{&_swigt__p_mfem__DivDivIntegrator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__VectorDiffusionIntegrator[] = {{&_swigt__p_mfem__VectorDiffusionIntegrator, 0, 0, 0},{0, 0, 0, 0}};
@@ -10083,7 +10094,7 @@ static swig_cast_info _swigc__p_mfem__IdentityInterpolator[] = {{&_swigt__p_mfem
 static swig_cast_info _swigc__p_mfem__CurlInterpolator[] = {{&_swigt__p_mfem__CurlInterpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__DivergenceInterpolator[] = {{&_swigt__p_mfem__DivergenceInterpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__NormalInterpolator[] = {{&_swigt__p_mfem__NormalInterpolator, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_mfem__BilinearFormIntegrator[] = {  {&_swigt__p_mfem__CurlCurlIntegrator, _p_mfem__CurlCurlIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DerivativeIntegrator, _p_mfem__DerivativeIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorFECurlIntegrator, _p_mfem__VectorFECurlIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorFEDivergenceIntegrator, _p_mfem__VectorFEDivergenceIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorMassIntegrator, _p_mfem__VectorMassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__GroupConvectionIntegrator, _p_mfem__GroupConvectionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__ConvectionIntegrator, _p_mfem__ConvectionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__BoundaryMassIntegrator, _p_mfem__BoundaryMassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__MassIntegrator, _p_mfem__MassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DiffusionIntegrator, _p_mfem__DiffusionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__SumIntegrator, _p_mfem__SumIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__InverseIntegrator, _p_mfem__InverseIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__LumpedIntegrator, _p_mfem__LumpedIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__BilinearFormIntegrator, 0, 0, 0},  {&_swigt__p_mfem__TransposeIntegrator, _p_mfem__TransposeIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorCurlCurlIntegrator, _p_mfem__VectorCurlCurlIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorFEMassIntegrator, _p_mfem__VectorFEMassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorDivergenceIntegrator, _p_mfem__VectorDivergenceIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DivDivIntegrator, _p_mfem__DivDivIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorDiffusionIntegrator, _p_mfem__VectorDiffusionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__ElasticityIntegrator, _p_mfem__ElasticityIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DGTraceIntegrator, _p_mfem__DGTraceIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DGDiffusionIntegrator, _p_mfem__DGDiffusionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__TraceJumpIntegrator, _p_mfem__TraceJumpIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__NormalTraceJumpIntegrator, _p_mfem__NormalTraceJumpIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DiscreteInterpolator, _p_mfem__DiscreteInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__GradientInterpolator, _p_mfem__GradientInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__IdentityInterpolator, _p_mfem__IdentityInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__CurlInterpolator, _p_mfem__CurlInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DivergenceInterpolator, _p_mfem__DivergenceInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__NormalInterpolator, _p_mfem__NormalInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_mfem__BilinearFormIntegrator[] = {  {&_swigt__p_mfem__CurlCurlIntegrator, _p_mfem__CurlCurlIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DerivativeIntegrator, _p_mfem__DerivativeIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorFECurlIntegrator, _p_mfem__VectorFECurlIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorFEDivergenceIntegrator, _p_mfem__VectorFEDivergenceIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorMassIntegrator, _p_mfem__VectorMassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__GroupConvectionIntegrator, _p_mfem__GroupConvectionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__ConvectionIntegrator, _p_mfem__ConvectionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__BoundaryMassIntegrator, _p_mfem__BoundaryMassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__MassIntegrator, _p_mfem__MassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DiffusionIntegrator, _p_mfem__DiffusionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__SumIntegrator, _p_mfem__SumIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__InverseIntegrator, _p_mfem__InverseIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__LumpedIntegrator, _p_mfem__LumpedIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__BilinearFormIntegrator, 0, 0, 0},  {&_swigt__p_mfem__TransposeIntegrator, _p_mfem__TransposeIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorCurlCurlIntegrator, _p_mfem__VectorCurlCurlIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorFEMassIntegrator, _p_mfem__VectorFEMassIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__GradientVectorFEIntegrator, _p_mfem__GradientVectorFEIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorDivergenceIntegrator, _p_mfem__VectorDivergenceIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DivDivIntegrator, _p_mfem__DivDivIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__VectorDiffusionIntegrator, _p_mfem__VectorDiffusionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__ElasticityIntegrator, _p_mfem__ElasticityIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DGTraceIntegrator, _p_mfem__DGTraceIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DGDiffusionIntegrator, _p_mfem__DGDiffusionIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__TraceJumpIntegrator, _p_mfem__TraceJumpIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__NormalTraceJumpIntegrator, _p_mfem__NormalTraceJumpIntegratorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DiscreteInterpolator, _p_mfem__DiscreteInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__GradientInterpolator, _p_mfem__GradientInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__IdentityInterpolator, _p_mfem__IdentityInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__CurlInterpolator, _p_mfem__CurlInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__DivergenceInterpolator, _p_mfem__DivergenceInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},  {&_swigt__p_mfem__NormalInterpolator, _p_mfem__NormalInterpolatorTo_p_mfem__BilinearFormIntegrator, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__DenseMatrix[] = {  {&_swigt__p_mfem__DenseMatrix, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__DiscreteInterpolator[] = {  {&_swigt__p_mfem__DiscreteInterpolator, 0, 0, 0},  {&_swigt__p_mfem__GradientInterpolator, _p_mfem__GradientInterpolatorTo_p_mfem__DiscreteInterpolator, 0, 0},  {&_swigt__p_mfem__IdentityInterpolator, _p_mfem__IdentityInterpolatorTo_p_mfem__DiscreteInterpolator, 0, 0},  {&_swigt__p_mfem__CurlInterpolator, _p_mfem__CurlInterpolatorTo_p_mfem__DiscreteInterpolator, 0, 0},  {&_swigt__p_mfem__DivergenceInterpolator, _p_mfem__DivergenceInterpolatorTo_p_mfem__DiscreteInterpolator, 0, 0},  {&_swigt__p_mfem__NormalInterpolator, _p_mfem__NormalInterpolatorTo_p_mfem__DiscreteInterpolator, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__DiscreteLinearOperator[] = {  {&_swigt__p_mfem__DiscreteLinearOperator, 0, 0, 0},{0, 0, 0, 0}};
@@ -10117,6 +10128,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_char,
   _swigc__p_double,
   _swigc__p_hex_t,
+  _swigc__p_intp,
   _swigc__p_mfem__AbstractSparseMatrix,
   _swigc__p_mfem__Array2DT_mfem__SparseMatrix_p_t,
   _swigc__p_mfem__ArrayT_int_t,
@@ -10140,6 +10152,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_mfem__ElasticityIntegrator,
   _swigc__p_mfem__FiniteElementSpace,
   _swigc__p_mfem__GradientInterpolator,
+  _swigc__p_mfem__GradientVectorFEIntegrator,
   _swigc__p_mfem__GridFunction,
   _swigc__p_mfem__GroupConvectionIntegrator,
   _swigc__p_mfem__IdentityInterpolator,

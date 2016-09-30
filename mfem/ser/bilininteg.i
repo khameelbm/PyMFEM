@@ -42,14 +42,15 @@ namespace mfem {
     integ.thisown = 0
 %}
 %pythonappend CurlCurlIntegrator::CurlCurlIntegrator %{
-    self._coeff = args[0]
+    if len(args) > 0:  self._coeff = args[0]
 %}
 %pythonappend VectorFEMassIntegrator::VectorFEMassIntegrator %{
-    self._coeff = args[0]
+    if len(args) > 0:  self._coeff = args[0]    
 %}
 }
 
 %include "fem/bilininteg.hpp"
+ /*
 %inline %{
 namespace mfem{
   
@@ -89,10 +90,10 @@ public:
    int spaceDim = Trans.GetSpaceDim();   
    double w;
    
-   //std::cout << "dim :" << std::to_string(dim) << "\n";
-   //std::cout << "space_dim :" << std::to_string(spaceDim) << "\n";         
-   //std::cout << "test_dof:" << std::to_string(test_dof) << "\n";
-   //std::cout << "trial_dof:" << std::to_string(trial_dof) << "\n";   
+   std::cout << "dim :" << std::to_string(dim) << "\n";
+   std::cout << "space_dim :" << std::to_string(spaceDim) << "\n";         
+   std::cout << "test_dof:" << std::to_string(test_dof) << "\n";
+   std::cout << "trial_dof:" << std::to_string(trial_dof) << "\n";   
 
    elmat.SetSize(test_dof, trial_dof);
    Jinv.  SetSize(dim);
@@ -109,15 +110,17 @@ public:
 #endif
 
    //std::cout << "trial_vshape H:" << std::to_string(trial_vshape.Height()) << "\n";
-   //std::cout << "K width:" << std::to_string(K.Width()) << "\n";   
+   std::cout << "K width:" << std::to_string(K.Width()) << "\n";   
    DenseMatrix tmp(trial_vshape.Height(), K.Width());
    DenseMatrix tmp2(test_dof, trial_dof);
-   
+
    const IntegrationRule *ir = IntRule;
    if (ir == NULL)
    {
       // integrand is rational function if det(J) is not constant
-      int order = Trans.OrderGrad(&test_el) + trial_el.GetOrder();
+     int order = Trans.OrderGrad(&test_el) + trial_el.GetOrder() + Trans.OrderW();
+       std::cout << "int order" << std::to_string(order) << "\n";
+      //std::cout << "int order" << std::to_string(order)<< " " << std::to_string(Trans.OrderW()) << "\n";
       if (test_el.Space() == FunctionSpace::rQk)
       {
          ir = &RefinedIntRules.Get(test_el.GetGeomType(), order);
@@ -155,15 +158,24 @@ public:
       }
       else
       {
-         if (Q)
-         {
+         std::cout << "here\n";	
+         if (Q){
+            std::cout << "here\n";		   
             w *= Q -> Eval (Trans, ip);
          }
+         std::cout << "here\n";		 
          gshape *= w;
-         AddMultABt (gshape, trial_vshape, elmat);
+         std::cout << "gshape:" << std::to_string(gshape.Width())  << " " <<
+	   std::to_string(gshape.Height()) << "\n ";
+         //std::cout << "trial_vshape:" << std::to_string(trial_vshape.Width())
+	 //  << " " <<  std::to_string(trial_vshape.Height()) << "\n ";
+	 
+         AddMultABt(gshape, trial_vshape, elmat);
       }
    }
    };
 };   
 }
 %}
+
+*/

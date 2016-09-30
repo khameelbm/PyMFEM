@@ -20,6 +20,7 @@
 import_array();
 %}
 
+%import "cpointer.i"
 %import "mesh.i"
 %import "array.i"
 %import "matrix.i"
@@ -32,6 +33,7 @@ import_array();
 %import "eltrans.i"
 %import "lininteg.i"
 
+%pointer_class(int, intp);
 
 %include "fem/fe_coll.hpp"
 %pythoncode %{
