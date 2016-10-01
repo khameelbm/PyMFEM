@@ -1,6 +1,7 @@
 %module pfespace
 %{
 #include <mpi.h>
+#define MFEM_USE_MPI      
 #include "fem/pfespace.hpp"
 #include "numpy/arrayobject.h"
 #define MFEM_USE_MPI  
@@ -26,9 +27,12 @@ typedef int HYPRE_Int;
 import_array();
 %}
 
-%import fespace.i
-%import pmesh.i
-%import hypre.i
+%import "cpointer.i"
+%import "fespace.i"
+%import "pmesh.i"
+%import "hypre.i"
+
+%pointer_class(int, intp);
 
 %immutable face_nbr_glob_dof_map;
 //DoF accesser

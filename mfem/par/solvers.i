@@ -1,10 +1,10 @@
 %module solvers
 %{
-#include <mpi.h>  
+#include <mpi.h>
+#define MFEM_USE_MPI
 #include "linalg/matrix.hpp"
 #include "linalg/sparsemat.hpp"
 #include "linalg/solvers.hpp"
-#define MFEM_USE_MPI
 #include "pyoperator.hpp"               
 %}
 %include mpi4py/mpi4py.i

@@ -1,11 +1,11 @@
 %module pgridfunc
 %{
 #include <mpi.h>
+#define MFEM_USE_MPI      
 #include "fem/pgridfunc.hpp"
 #include "fem/linearform.hpp"  
 #include "pycoefficient.hpp"  
 #include "numpy/arrayobject.h"
-#define MFEM_USE_MPI  
 %}
 %include mpi4py/mpi4py.i
 %mpi4py_typemap(Comm, MPI_Comm);
@@ -14,12 +14,14 @@
 import_array();
 %}
 
-%import pfespace.i
-%import gridfunc.i
-%import hypre.i
-%import pmesh.i
-%import linearform.i
+%import "cpointer.i"
+%import "pfespace.i"
+%import "gridfunc.i"
+%import "hypre.i"
+%import "pmesh.i"
+%import "linearform.i"
 
+%pointer_class(int, intp);
 
 %typemap(in) const mfem::IntegrationRule *irs[]{
   if (PyList_Check($input)) {

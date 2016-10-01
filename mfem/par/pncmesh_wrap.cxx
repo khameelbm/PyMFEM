@@ -3456,32 +3456,33 @@ namespace Swig {
 #define SWIGTYPE_p_char swig_types[2]
 #define SWIGTYPE_p_hex_t swig_types[3]
 #define SWIGTYPE_p_int swig_types[4]
-#define SWIGTYPE_p_mfem__ArrayT_int_t swig_types[5]
-#define SWIGTYPE_p_mfem__ArrayT_long_t swig_types[6]
-#define SWIGTYPE_p_mfem__ArrayT_mfem__Refinement_t swig_types[7]
-#define SWIGTYPE_p_mfem__FiniteElementCollection swig_types[8]
-#define SWIGTYPE_p_mfem__FiniteElementSpace swig_types[9]
-#define SWIGTYPE_p_mfem__GridFunction swig_types[10]
-#define SWIGTYPE_p_mfem__IntegrationRule swig_types[11]
-#define SWIGTYPE_p_mfem__Mesh swig_types[12]
-#define SWIGTYPE_p_mfem__NCMesh swig_types[13]
-#define SWIGTYPE_p_mfem__NCMesh__MeshId swig_types[14]
-#define SWIGTYPE_p_mfem__NCMesh__NCList swig_types[15]
-#define SWIGTYPE_p_mfem__NeighborDofMessage swig_types[16]
-#define SWIGTYPE_p_mfem__NeighborRowReply swig_types[17]
-#define SWIGTYPE_p_mfem__NeighborRowRequest swig_types[18]
-#define SWIGTYPE_p_mfem__ParMesh swig_types[19]
-#define SWIGTYPE_p_mfem__ParNCMesh swig_types[20]
-#define SWIGTYPE_p_mfem__STable swig_types[21]
-#define SWIGTYPE_p_mfem__Table swig_types[22]
-#define SWIGTYPE_p_mfem__Vector swig_types[23]
-#define SWIGTYPE_p_quad_t swig_types[24]
-#define SWIGTYPE_p_seg_t swig_types[25]
-#define SWIGTYPE_p_std__setT_int_t swig_types[26]
-#define SWIGTYPE_p_tet_t swig_types[27]
-#define SWIGTYPE_p_tri_t swig_types[28]
-static swig_type_info *swig_types[30];
-static swig_module_info swig_module = {swig_types, 29, 0, 0, 0, 0};
+#define SWIGTYPE_p_intp swig_types[5]
+#define SWIGTYPE_p_mfem__ArrayT_int_t swig_types[6]
+#define SWIGTYPE_p_mfem__ArrayT_long_t swig_types[7]
+#define SWIGTYPE_p_mfem__ArrayT_mfem__Refinement_t swig_types[8]
+#define SWIGTYPE_p_mfem__FiniteElementCollection swig_types[9]
+#define SWIGTYPE_p_mfem__FiniteElementSpace swig_types[10]
+#define SWIGTYPE_p_mfem__GridFunction swig_types[11]
+#define SWIGTYPE_p_mfem__IntegrationRule swig_types[12]
+#define SWIGTYPE_p_mfem__Mesh swig_types[13]
+#define SWIGTYPE_p_mfem__NCMesh swig_types[14]
+#define SWIGTYPE_p_mfem__NCMesh__MeshId swig_types[15]
+#define SWIGTYPE_p_mfem__NCMesh__NCList swig_types[16]
+#define SWIGTYPE_p_mfem__NeighborDofMessage swig_types[17]
+#define SWIGTYPE_p_mfem__NeighborRowReply swig_types[18]
+#define SWIGTYPE_p_mfem__NeighborRowRequest swig_types[19]
+#define SWIGTYPE_p_mfem__ParMesh swig_types[20]
+#define SWIGTYPE_p_mfem__ParNCMesh swig_types[21]
+#define SWIGTYPE_p_mfem__STable swig_types[22]
+#define SWIGTYPE_p_mfem__Table swig_types[23]
+#define SWIGTYPE_p_mfem__Vector swig_types[24]
+#define SWIGTYPE_p_quad_t swig_types[25]
+#define SWIGTYPE_p_seg_t swig_types[26]
+#define SWIGTYPE_p_std__setT_int_t swig_types[27]
+#define SWIGTYPE_p_tet_t swig_types[28]
+#define SWIGTYPE_p_tri_t swig_types[29]
+static swig_type_info *swig_types[31];
+static swig_module_info swig_module = {swig_types, 30, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3587,13 +3588,16 @@ namespace swig {
 
 
 #include <mpi.h>
+#define MFEM_USE_MPI    
 #include "mesh/mesh_headers.hpp"
 #include "mpi4py/mpi4py.h"
 #include "numpy/arrayobject.h"  
-#define MFEM_USE_MPI  
 
 
 #include "mpi4py/mpi4py.h"
+
+
+typedef int intp;
 
 
 SWIGINTERN int
@@ -5650,6 +5654,9 @@ static PyMethodDef SwigMethods[] = {
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_intpTo_p_int(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((int *)  ((intp *) x));
+}
 static void *_p_mfem__ParNCMeshTo_p_mfem__NCMesh(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((mfem::NCMesh *)  ((mfem::ParNCMesh *) x));
 }
@@ -5661,6 +5668,7 @@ static swig_type_info _swigt__p_Map = {"_p_Map", "Map *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_hex_t = {"_p_hex_t", "hex_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_intp = {"_p_intp", "intp *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__ArrayT_int_t = {"_p_mfem__ArrayT_int_t", "mfem::Array< int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__ArrayT_long_t = {"_p_mfem__ArrayT_long_t", "mfem::Array< long > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__ArrayT_mfem__Refinement_t = {"_p_mfem__ArrayT_mfem__Refinement_t", "mfem::Array< mfem::Refinement > *", 0, 0, (void*)0, 0};
@@ -5692,6 +5700,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_char,
   &_swigt__p_hex_t,
   &_swigt__p_int,
+  &_swigt__p_intp,
   &_swigt__p_mfem__ArrayT_int_t,
   &_swigt__p_mfem__ArrayT_long_t,
   &_swigt__p_mfem__ArrayT_mfem__Refinement_t,
@@ -5722,7 +5731,8 @@ static swig_cast_info _swigc__p_MPI_Comm[] = {  {&_swigt__p_MPI_Comm, 0, 0, 0},{
 static swig_cast_info _swigc__p_Map[] = {  {&_swigt__p_Map, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_hex_t[] = {  {&_swigt__p_hex_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_intp, _p_intpTo_p_int, 0, 0},  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_intp[] = {  {&_swigt__p_intp, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__ArrayT_int_t[] = {  {&_swigt__p_mfem__ArrayT_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__ArrayT_long_t[] = {  {&_swigt__p_mfem__ArrayT_long_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__ArrayT_mfem__Refinement_t[] = {  {&_swigt__p_mfem__ArrayT_mfem__Refinement_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -5754,6 +5764,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_char,
   _swigc__p_hex_t,
   _swigc__p_int,
+  _swigc__p_intp,
   _swigc__p_mfem__ArrayT_int_t,
   _swigc__p_mfem__ArrayT_long_t,
   _swigc__p_mfem__ArrayT_mfem__Refinement_t,

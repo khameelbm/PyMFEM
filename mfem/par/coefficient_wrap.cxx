@@ -3609,14 +3609,16 @@ namespace swig {
 }
 
 
+#define MFEM_USE_MPI    
 #include "fem/fem.hpp"
 #include "fem/fe_coll.hpp"
 #include "fem/fespace.hpp"
 #include "fem/eltrans.hpp"
 #include "fem/intrules.hpp"
 #include "linalg/vector.hpp"
+#include "mesh/pmesh.hpp"      
 #include "fem/coefficient.hpp"
-#include "linalg/densemat.hpp"    
+#include "linalg/densemat.hpp"
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -3624,6 +3626,7 @@ namespace swig {
 #include <cmath>
 #include <cstring>
 #include <ctime>
+#include "numpy/arrayobject.h"  
 #include "pycoefficient.hpp"
 #define MFEM_USE_MPI  
 
@@ -12570,6 +12573,9 @@ SWIG_init(void) {
 #endif
   
   SWIG_InstallConstants(d,swig_const_table);
+  
+  
+  import_array();
   
 #if PY_VERSION_HEX >= 0x03000000
   return m;

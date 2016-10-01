@@ -1,8 +1,10 @@
 %module mesh_operators
 
 %{
+#define MFEM_USE_MPI      
 #include "numpy/arrayobject.h"
-#include "mesh/mesh_operators.hpp"  
+#include "mesh/mesh_operators.hpp"
+#include "mesh/mesh_operators.hpp"    
   %}
 // initialization required to return numpy array from SWIG
 %init %{

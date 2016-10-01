@@ -1,10 +1,10 @@
 %module pncmesh
 %{
 #include <mpi.h>
+#define MFEM_USE_MPI    
 #include "mesh/mesh_headers.hpp"
 #include "mpi4py/mpi4py.h"
 #include "numpy/arrayobject.h"  
-#define MFEM_USE_MPI  
 %}
 %include mpi4py/mpi4py.i
 %mpi4py_typemap(Comm, MPI_Comm);
@@ -13,13 +13,16 @@
 import_array();
 %}
 
-
 %init %{
 import_array();
 %}
 
-%import mesh.i
-%import ncmesh.i
-%import communication.i
+%import "cpointer.i"
+%import "mesh.i"
+%import "ncmesh.i"
+%import "communication.i"
+
+%pointer_class(int, intp);
+
 #define MFEM_USE_MPI  
 %include "mesh/pncmesh.hpp"

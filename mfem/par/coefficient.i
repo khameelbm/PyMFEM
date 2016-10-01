@@ -12,14 +12,16 @@
 %module(directors="1")  coefficient
 /*%module  coefficient*/
 %{
+#define MFEM_USE_MPI    
 #include "fem/fem.hpp"
 #include "fem/fe_coll.hpp"
 #include "fem/fespace.hpp"
 #include "fem/eltrans.hpp"
 #include "fem/intrules.hpp"
 #include "linalg/vector.hpp"
+#include "mesh/pmesh.hpp"      
 #include "fem/coefficient.hpp"
-#include "linalg/densemat.hpp"    
+#include "linalg/densemat.hpp"
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -27,9 +29,14 @@
 #include <cmath>
 #include <cstring>
 #include <ctime>
+#include "numpy/arrayobject.h"  
 #include "pycoefficient.hpp"
 #define MFEM_USE_MPI  
 %}
+%init %{
+import_array();
+%}
+#define MFEM_USE_MPI    
 //%import "general/array.hpp"
 %import "array.i"
 %import "matrix.i"
@@ -38,7 +45,6 @@
 %import "densemat.i"
 %import "vector.i"
 %import "eltrans.i"
-#define MFEM_USE_MPI  
 //%import "pmesh.i"
 %ignore Function;
 %ignore DeltaCoefficient;

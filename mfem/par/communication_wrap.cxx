@@ -3124,9 +3124,9 @@ namespace swig {
 
 
 #include <mpi.h>
+#define MFEM_USE_MPI    
 #include "general/sets.hpp"
 #include "general/communication.hpp"
-#define MFEM_USE_MPI  
 
 
 #include "mpi4py/mpi4py.h"

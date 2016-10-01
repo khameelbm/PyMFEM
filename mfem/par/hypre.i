@@ -2,10 +2,10 @@
 %{
 #include <mpi.h>
 #include <Python.h>
+#define MFEM_USE_MPI  
 #include "linalg/hypre.hpp"
 #include "numpy/arrayobject.h"
 #include "pyoperator.hpp"           
-#define MFEM_USE_MPI
 %}
 
 %include mpi4py/mpi4py.i

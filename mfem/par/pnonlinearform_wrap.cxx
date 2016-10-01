@@ -3456,49 +3456,50 @@ namespace Swig {
 #define SWIGTYPE_p_char swig_types[2]
 #define SWIGTYPE_p_hex_t swig_types[3]
 #define SWIGTYPE_p_int swig_types[4]
-#define SWIGTYPE_p_mfem__AbstractSparseMatrix swig_types[5]
-#define SWIGTYPE_p_mfem__ArrayT_int_t swig_types[6]
-#define SWIGTYPE_p_mfem__DenseMatrix swig_types[7]
-#define SWIGTYPE_p_mfem__DenseMatrixInverse swig_types[8]
-#define SWIGTYPE_p_mfem__GridFunction swig_types[9]
-#define SWIGTYPE_p_mfem__HypreADS swig_types[10]
-#define SWIGTYPE_p_mfem__HypreAMS swig_types[11]
-#define SWIGTYPE_p_mfem__HypreBoomerAMG swig_types[12]
-#define SWIGTYPE_p_mfem__HypreDiagScale swig_types[13]
-#define SWIGTYPE_p_mfem__HypreGMRES swig_types[14]
-#define SWIGTYPE_p_mfem__HypreIdentity swig_types[15]
-#define SWIGTYPE_p_mfem__HyprePCG swig_types[16]
-#define SWIGTYPE_p_mfem__HypreParMatrix swig_types[17]
-#define SWIGTYPE_p_mfem__HypreParVector swig_types[18]
-#define SWIGTYPE_p_mfem__HypreParaSails swig_types[19]
-#define SWIGTYPE_p_mfem__HypreSmoother swig_types[20]
-#define SWIGTYPE_p_mfem__HypreSolver swig_types[21]
-#define SWIGTYPE_p_mfem__IdentityOperator swig_types[22]
-#define SWIGTYPE_p_mfem__IntegrationRule swig_types[23]
-#define SWIGTYPE_p_mfem__L2_FECollection swig_types[24]
-#define SWIGTYPE_p_mfem__LinearForm swig_types[25]
-#define SWIGTYPE_p_mfem__Matrix swig_types[26]
-#define SWIGTYPE_p_mfem__MatrixInverse swig_types[27]
-#define SWIGTYPE_p_mfem__NonlinearForm swig_types[28]
-#define SWIGTYPE_p_mfem__Operator swig_types[29]
-#define SWIGTYPE_p_mfem__ParFiniteElementSpace swig_types[30]
-#define SWIGTYPE_p_mfem__ParGridFunction swig_types[31]
-#define SWIGTYPE_p_mfem__ParNonlinearForm swig_types[32]
-#define SWIGTYPE_p_mfem__PyOperatorBase swig_types[33]
-#define SWIGTYPE_p_mfem__PyTimeDependentOperatorBase swig_types[34]
-#define SWIGTYPE_p_mfem__RAPOperator swig_types[35]
-#define SWIGTYPE_p_mfem__Solver swig_types[36]
-#define SWIGTYPE_p_mfem__SparseMatrix swig_types[37]
-#define SWIGTYPE_p_mfem__TimeDependentOperator swig_types[38]
-#define SWIGTYPE_p_mfem__TransposeOperator swig_types[39]
-#define SWIGTYPE_p_mfem__TripleProductOperator swig_types[40]
-#define SWIGTYPE_p_mfem__Vector swig_types[41]
-#define SWIGTYPE_p_quad_t swig_types[42]
-#define SWIGTYPE_p_seg_t swig_types[43]
-#define SWIGTYPE_p_tet_t swig_types[44]
-#define SWIGTYPE_p_tri_t swig_types[45]
-static swig_type_info *swig_types[47];
-static swig_module_info swig_module = {swig_types, 46, 0, 0, 0, 0};
+#define SWIGTYPE_p_intp swig_types[5]
+#define SWIGTYPE_p_mfem__AbstractSparseMatrix swig_types[6]
+#define SWIGTYPE_p_mfem__ArrayT_int_t swig_types[7]
+#define SWIGTYPE_p_mfem__DenseMatrix swig_types[8]
+#define SWIGTYPE_p_mfem__DenseMatrixInverse swig_types[9]
+#define SWIGTYPE_p_mfem__GridFunction swig_types[10]
+#define SWIGTYPE_p_mfem__HypreADS swig_types[11]
+#define SWIGTYPE_p_mfem__HypreAMS swig_types[12]
+#define SWIGTYPE_p_mfem__HypreBoomerAMG swig_types[13]
+#define SWIGTYPE_p_mfem__HypreDiagScale swig_types[14]
+#define SWIGTYPE_p_mfem__HypreGMRES swig_types[15]
+#define SWIGTYPE_p_mfem__HypreIdentity swig_types[16]
+#define SWIGTYPE_p_mfem__HyprePCG swig_types[17]
+#define SWIGTYPE_p_mfem__HypreParMatrix swig_types[18]
+#define SWIGTYPE_p_mfem__HypreParVector swig_types[19]
+#define SWIGTYPE_p_mfem__HypreParaSails swig_types[20]
+#define SWIGTYPE_p_mfem__HypreSmoother swig_types[21]
+#define SWIGTYPE_p_mfem__HypreSolver swig_types[22]
+#define SWIGTYPE_p_mfem__IdentityOperator swig_types[23]
+#define SWIGTYPE_p_mfem__IntegrationRule swig_types[24]
+#define SWIGTYPE_p_mfem__L2_FECollection swig_types[25]
+#define SWIGTYPE_p_mfem__LinearForm swig_types[26]
+#define SWIGTYPE_p_mfem__Matrix swig_types[27]
+#define SWIGTYPE_p_mfem__MatrixInverse swig_types[28]
+#define SWIGTYPE_p_mfem__NonlinearForm swig_types[29]
+#define SWIGTYPE_p_mfem__Operator swig_types[30]
+#define SWIGTYPE_p_mfem__ParFiniteElementSpace swig_types[31]
+#define SWIGTYPE_p_mfem__ParGridFunction swig_types[32]
+#define SWIGTYPE_p_mfem__ParNonlinearForm swig_types[33]
+#define SWIGTYPE_p_mfem__PyOperatorBase swig_types[34]
+#define SWIGTYPE_p_mfem__PyTimeDependentOperatorBase swig_types[35]
+#define SWIGTYPE_p_mfem__RAPOperator swig_types[36]
+#define SWIGTYPE_p_mfem__Solver swig_types[37]
+#define SWIGTYPE_p_mfem__SparseMatrix swig_types[38]
+#define SWIGTYPE_p_mfem__TimeDependentOperator swig_types[39]
+#define SWIGTYPE_p_mfem__TransposeOperator swig_types[40]
+#define SWIGTYPE_p_mfem__TripleProductOperator swig_types[41]
+#define SWIGTYPE_p_mfem__Vector swig_types[42]
+#define SWIGTYPE_p_quad_t swig_types[43]
+#define SWIGTYPE_p_seg_t swig_types[44]
+#define SWIGTYPE_p_tet_t swig_types[45]
+#define SWIGTYPE_p_tri_t swig_types[46]
+static swig_type_info *swig_types[48];
+static swig_module_info swig_module = {swig_types, 47, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3604,13 +3605,16 @@ namespace swig {
 
 
 #include <mpi.h>
+#define MFEM_USE_MPI
 #include "fem/pnonlinearform.hpp"
 #include "fem/linearform.hpp"
 #include "pyoperator.hpp"           
-#define MFEM_USE_MPI  
 
 
 #include "mpi4py/mpi4py.h"
+
+
+typedef int intp;
 
 
   #define SWIG_From_double   PyFloat_FromDouble 
@@ -4157,6 +4161,9 @@ static void *_p_mfem__LinearFormTo_p_mfem__Vector(void *x, int *SWIGUNUSEDPARM(n
 static void *_p_mfem__ParGridFunctionTo_p_mfem__GridFunction(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((mfem::GridFunction *)  ((mfem::ParGridFunction *) x));
 }
+static void *_p_intpTo_p_int(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((int *)  ((intp *) x));
+}
 static void *_p_mfem__ParNonlinearFormTo_p_mfem__NonlinearForm(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((mfem::NonlinearForm *)  ((mfem::ParNonlinearForm *) x));
 }
@@ -4246,6 +4253,7 @@ static swig_type_info _swigt__p_Map = {"_p_Map", "Map *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_hex_t = {"_p_hex_t", "hex_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "int *|HYPRE_Int *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_intp = {"_p_intp", "intp *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__ArrayT_int_t = {"_p_mfem__ArrayT_int_t", "mfem::Array< int > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__GridFunction = {"_p_mfem__GridFunction", "mfem::GridFunction *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mfem__IntegrationRule = {"_p_mfem__IntegrationRule", "mfem::IntegrationRule *", 0, 0, (void*)0, 0};
@@ -4294,6 +4302,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_char,
   &_swigt__p_hex_t,
   &_swigt__p_int,
+  &_swigt__p_intp,
   &_swigt__p_mfem__AbstractSparseMatrix,
   &_swigt__p_mfem__ArrayT_int_t,
   &_swigt__p_mfem__DenseMatrix,
@@ -4341,7 +4350,8 @@ static swig_cast_info _swigc__p_MPI_Comm[] = {  {&_swigt__p_MPI_Comm, 0, 0, 0},{
 static swig_cast_info _swigc__p_Map[] = {  {&_swigt__p_Map, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_hex_t[] = {  {&_swigt__p_hex_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_intp, _p_intpTo_p_int, 0, 0},  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_intp[] = {  {&_swigt__p_intp, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__ArrayT_int_t[] = {  {&_swigt__p_mfem__ArrayT_int_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__GridFunction[] = {  {&_swigt__p_mfem__GridFunction, 0, 0, 0},  {&_swigt__p_mfem__ParGridFunction, _p_mfem__ParGridFunctionTo_p_mfem__GridFunction, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mfem__IntegrationRule[] = {  {&_swigt__p_mfem__IntegrationRule, 0, 0, 0},{0, 0, 0, 0}};
@@ -4390,6 +4400,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_char,
   _swigc__p_hex_t,
   _swigc__p_int,
+  _swigc__p_intp,
   _swigc__p_mfem__AbstractSparseMatrix,
   _swigc__p_mfem__ArrayT_int_t,
   _swigc__p_mfem__DenseMatrix,
