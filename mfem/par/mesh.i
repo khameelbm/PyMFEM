@@ -340,7 +340,7 @@ namespace mfem{
    }
    PyObject* GetVertexArray(int i) const
    {
-     int L = self->Dimension();
+     int L = self->SpaceDimension();
      int n;
      const double *v = self->GetVertex(i);
      npy_intp dims[] = {L};
@@ -351,6 +351,17 @@ namespace mfem{
      }
      return array;
    }
+   PyObject* GetAttributeArray() const
+   {
+     int i;
+     npy_intp dims[] = {self->GetNE()};
+     PyObject *array = PyArray_SimpleNew(1, dims, NPY_INT);
+     int *x    = (int *)PyArray_DATA(array);
+     for (i = 0; i < self->GetNE() ; i++){
+       x[i] = (int)(self->GetElement(i)->GetAttribute());
+     }
+     return array;
+   }   
    PyObject* GetBdrElementFace(int i) const
    {
      int a;

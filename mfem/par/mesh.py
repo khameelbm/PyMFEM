@@ -634,6 +634,9 @@ class Mesh(_object):
     def GetVertexArray(self, i):
         return _mesh.Mesh_GetVertexArray(self, i)
 
+    def GetAttributeArray(self):
+        return _mesh.Mesh_GetAttributeArray(self)
+
     def GetBdrElementFace(self, *args):
         return _mesh.Mesh_GetBdrElementFace(self, *args)
 
